@@ -4,7 +4,7 @@ build:
 
 .PHONY: test
 test:
-	go test -coverpkg=./... ./...
+	go test -v -coverpkg=./... ./...
 
 .PHONY: release
 release: build test
